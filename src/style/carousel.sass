@@ -1,0 +1,40 @@
+.carousel-container
+  display: flex
+  flex-direction: column
+  justify-content: center
+  min-height: 400px
+  align-items: center
+
+.carousel
+  position: relative
+  max-width: 600px
+
+.carousel__slide
+  margin-right: auto
+  margin-left: auto
+  display: none
+  max-width: 300px
+  list-style-type: none
+  text-align: center
+
+.carousel__slide--active
+  display: inline-block
+
+.carousel__arrow
+  position: absolute
+  top: 50%
+  display: block
+  color: #111
+  cursor: pointer
+  opacity: .75
+  transform: translateY(-50%)
+  transition: opacity .15s cubic-bezier(.4, 0, 1, 1)
+  outline: 0
+  &:hover
+    opacity: .5
+
+.carousel__arrow--left
+  left: 32px
+
+.carousel__arrow--right
+  right: 32px
